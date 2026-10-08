@@ -64,7 +64,7 @@ M.setup = function()
     Search          = { fg = c.bg0, bg = c.search },
     IncSearch       = { fg = c.bg0, bg = c.inc_search },
     CurSearch       = { link = "IncSearch" },
-    Substitute      = { fg = c.bg0, bg = c.bright_red },
+    Substitute      = { fg = c.bg0, bg = c.red },
 
     Conceal         = { fg = c.fg_dim },
     QuickFixLine    = { bg = c.bg2 },
@@ -88,26 +88,26 @@ M.setup = function()
     -- Base syntax
     ------------------------------------------------------------------
     Comment         = { fg = c.comment, italic = true },
-    Constant        = { fg = c.orange },
+    Constant        = { fg = c.red },
     String          = { fg = c.green },
     Character       = { fg = c.bright_green },
-    Number          = { fg = c.bright_orange },
-    Float           = { fg = c.bright_orange },
-    Boolean         = { fg = c.bright_orange, bold = true },
+    Number          = { fg = c.red },
+    Float           = { fg = c.red },
+    Boolean         = { fg = c.red, bold = true },
 
     Identifier      = { fg = c.fg0 },
     Function        = { fg = c.bright_blue, bold = true },
-    Statement       = { fg = c.magenta },
-    Conditional     = { fg = c.magenta },
-    Repeat          = { fg = c.magenta },
-    Label           = { fg = c.magenta },
+    Statement       = { fg = c.bright_magenta },
+    Conditional     = { fg = c.bright_magenta },
+    Repeat          = { fg = c.bright_magenta },
+    Label           = { fg = c.bright_magenta },
     Operator        = { fg = c.fg2 },
-    Keyword         = { fg = c.magenta, italic = true },
-    Exception       = { fg = c.bright_red },
+    Keyword         = { fg = c.bright_magenta, italic = true },
+    Exception       = { fg = c.red },
 
     PreProc         = { fg = c.yellow },
     Include         = { fg = c.bright_blue, italic = true },
-    Define          = { fg = c.magenta },
+    Define          = { fg = c.bright_magenta },
     Macro           = { fg = c.bright_magenta },
     PreCondit       = { fg = c.yellow },
 
@@ -187,13 +187,13 @@ M.setup = function()
     ["@variable.member"]       = { fg = c.bright_aqua },
     ["@property"]              = { fg = c.bright_aqua },
 
-    ["@constant"]              = { fg = c.orange },
-    ["@constant.builtin"]      = { fg = c.bright_orange, bold = true },
+    ["@constant"]              = { fg = c.red },
+    ["@constant.builtin"]      = { fg = c.red, bold = true },
     ["@constant.macro"]        = { fg = c.bright_magenta },
 
     ["@module"]                = { fg = c.yellow },
     ["@module.builtin"]        = { fg = c.bright_orange },
-    ["@label"]                 = { fg = c.magenta },
+    ["@label"]                 = { fg = c.bright_magenta },
 
     ["@string"]                = { fg = c.green },
     ["@string.documentation"]  = { fg = c.green, italic = true },
@@ -207,14 +207,14 @@ M.setup = function()
     ["@character"]             = { fg = c.bright_green },
     ["@character.special"]     = { fg = c.bright_magenta },
 
-    ["@boolean"]               = { fg = c.bright_orange, bold = true },
-    ["@number"]                = { fg = c.bright_orange },
-    ["@number.float"]          = { fg = c.bright_orange },
+    ["@boolean"]               = { fg = c.red, bold = true },
+    ["@number"]                = { fg = c.red },
+    ["@number.float"]          = { fg = c.red },
 
     ["@type"]                  = { fg = c.yellow, bold = true },
     ["@type.builtin"]          = { fg = c.yellow, italic = true },
     ["@type.definition"]       = { fg = c.yellow },
-    ["@type.qualifier"]        = { fg = c.magenta },
+    ["@type.qualifier"]        = { fg = c.bright_magenta },
 
     ["@attribute"]             = { fg = c.bright_aqua },
     ["@attribute.builtin"]     = { fg = c.bright_orange },
@@ -230,19 +230,19 @@ M.setup = function()
 
     ["@operator"]              = { fg = c.fg2 },
 
-    ["@keyword"]                        = { fg = c.magenta, italic = true },
-    ["@keyword.coroutine"]              = { fg = c.magenta, italic = true },
-    ["@keyword.function"]               = { fg = c.magenta, italic = true },
-    ["@keyword.operator"]               = { fg = c.magenta },
+    ["@keyword"]                        = { fg = c.bright_magenta, italic = true },
+    ["@keyword.coroutine"]              = { fg = c.bright_magenta, italic = true },
+    ["@keyword.function"]               = { fg = c.bright_magenta, italic = true },
+    ["@keyword.operator"]               = { fg = c.bright_magenta },
     ["@keyword.import"]                 = { fg = c.bright_blue, italic = true },
-    ["@keyword.type"]                   = { fg = c.magenta },
-    ["@keyword.modifier"]               = { fg = c.magenta },
-    ["@keyword.repeat"]                 = { fg = c.magenta },
-    ["@keyword.return"]                 = { fg = c.magenta, italic = true },
-    ["@keyword.debug"]                  = { fg = c.bright_red },
-    ["@keyword.exception"]              = { fg = c.bright_red, italic = true },
-    ["@keyword.conditional"]            = { fg = c.magenta },
-    ["@keyword.conditional.ternary"]    = { fg = c.magenta },
+    ["@keyword.type"]                   = { fg = c.bright_magenta },
+    ["@keyword.modifier"]               = { fg = c.bright_magenta },
+    ["@keyword.repeat"]                 = { fg = c.bright_magenta },
+    ["@keyword.return"]                 = { fg = c.bright_magenta, italic = true },
+    ["@keyword.debug"]                  = { fg = c.red },
+    ["@keyword.exception"]              = { fg = c.red, italic = true },
+    ["@keyword.conditional"]            = { fg = c.bright_magenta },
+    ["@keyword.conditional.ternary"]    = { fg = c.bright_magenta },
     ["@keyword.directive"]              = { fg = c.yellow },
     ["@keyword.directive.define"]       = { fg = c.yellow },
 
@@ -282,7 +282,7 @@ M.setup = function()
     ["@diff.minus"]            = { fg = c.diff_delete },
     ["@diff.delta"]            = { fg = c.diff_change },
 
-    ["@tag"]                   = { fg = c.magenta },
+    ["@tag"]                   = { fg = c.bright_magenta },
     ["@tag.builtin"]           = { fg = c.bright_magenta },
     ["@tag.attribute"]         = { fg = c.bright_aqua },
     ["@tag.delimiter"]         = { fg = c.fg2 },
@@ -297,7 +297,7 @@ M.setup = function()
     BlinkCmpScrollBarThumb    = { bg = c.bg2 },
     BlinkCmpLabel             = { fg = c.fg0 },
     BlinkCmpLabelDeprecated   = { fg = c.fg_dim, strikethrough = true },
-    BlinkCmpLabelMatch        = { fg = c.bright_aqua, bold = true },
+    BlinkCmpLabelMatch        = { fg = c.bright_magenta, bold = true },
     BlinkCmpLabelDetail       = { fg = c.fg_dim },
     BlinkCmpLabelDescription  = { fg = c.fg_dim },
     BlinkCmpKind              = { fg = c.bright_blue },
@@ -354,7 +354,7 @@ M.setup = function()
     ------------------------------------------------------------------
     -- fidget.nvim
     ------------------------------------------------------------------
-    FidgetTitle = { fg = c.bright_aqua, bold = true },
+    FidgetTitle = { fg = c.bright_magenta, bold = true },
     FidgetTask  = { fg = c.fg_dim },
 
     ------------------------------------------------------------------
@@ -365,34 +365,34 @@ M.setup = function()
     FlashCurrent    = { fg = c.bg0, bg = c.bright_orange },
     FlashLabel      = { fg = c.bg0, bg = c.bright_magenta, bold = true },
     FlashPrompt     = { fg = c.fg0, bg = c.bg1 },
-    FlashPromptIcon = { fg = c.bright_aqua },
-    FlashCursor     = { fg = c.bg0, bg = c.bright_red },
+    FlashPromptIcon = { fg = c.bright_magenta },
+    FlashCursor     = { fg = c.bg0, bg = c.red },
 
     ------------------------------------------------------------------
     -- harpoon
     ------------------------------------------------------------------
     HarpoonWindow     = { link = "NormalFloat" },
     HarpoonBorder     = { link = "FloatBorder" },
-    HarpoonTitle      = { fg = c.bright_aqua, bold = true },
+    HarpoonTitle      = { fg = c.bright_magenta, bold = true },
     HarpoonFileName   = { fg = c.fg0 },
     HarpoonFileIndex  = { fg = c.bright_magenta, bold = true },
-    HarpoonActiveFile = { fg = c.bright_aqua, bold = true },
+    HarpoonActiveFile = { fg = c.bright_magenta, bold = true },
     HarpoonCursor     = { bg = c.cursorline },
 
     ------------------------------------------------------------------
     -- himalaya
     ------------------------------------------------------------------
     HimlEmail  = { fg = c.bright_blue },
-    HimlHeader = { fg = c.bright_aqua, bold = true },
+    HimlHeader = { fg = c.bright_magenta, bold = true },
     HimlFlag   = { fg = c.bright_magenta },
 
     ------------------------------------------------------------------
     -- mini.nvim
     ------------------------------------------------------------------
-    MiniStatuslineModeNormal  = { fg = c.bg0, bg = c.bright_blue, bold = true },
-    MiniStatuslineModeInsert  = { fg = c.bg0, bg = c.bright_green, bold = true },
-    MiniStatuslineModeVisual  = { fg = c.bg0, bg = c.bright_magenta, bold = true },
-    MiniStatuslineModeReplace = { fg = c.bg0, bg = c.bright_red, bold = true },
+    MiniStatuslineModeNormal  = { fg = c.bg0, bg = c.bright_magenta, bold = true },
+    MiniStatuslineModeInsert  = { fg = c.bg0, bg = c.green, bold = true },
+    MiniStatuslineModeVisual  = { fg = c.bg0, bg = c.bright_blue, bold = true },
+    MiniStatuslineModeReplace = { fg = c.bg0, bg = c.red, bold = true },
     MiniStatuslineModeCommand = { fg = c.bg0, bg = c.bright_yellow, bold = true },
     MiniStatuslineModeOther   = { fg = c.bg0, bg = c.bright_aqua, bold = true },
 
@@ -408,9 +408,9 @@ M.setup = function()
     MiniTablineModifiedVisible = { fg = c.bright_yellow, bg = c.bg1 },
     MiniTablineModifiedHidden  = { fg = c.warn, bg = c.bg0 },
     MiniTablineFill            = { bg = c.bg0 },
-    MiniTablineTabpagesection  = { fg = c.bg0, bg = c.bright_aqua, bold = true },
+    MiniTablineTabpagesection  = { fg = c.bg0, bg = c.bright_magenta, bold = true },
 
-    MiniIndentscopeSymbol    = { fg = c.bright_aqua },
+    MiniIndentscopeSymbol    = { fg = c.bright_magenta },
     MiniIndentscopeSymbolOff = { fg = c.bg2 },
 
     MiniFilesBorder         = { fg = c.border, bg = c.bg1 },
@@ -419,23 +419,23 @@ M.setup = function()
     MiniFilesDirectory      = { fg = c.bright_blue },
     MiniFilesFile           = { fg = c.fg0 },
     MiniFilesNormal         = { fg = c.fg0, bg = c.bg1 },
-    MiniFilesTitle          = { fg = c.bright_aqua, bold = true },
+    MiniFilesTitle          = { fg = c.bright_magenta, bold = true },
     MiniFilesTitleFocused   = { fg = c.bright_magenta, bold = true },
 
     MiniPickBorder        = { fg = c.border, bg = c.bg1 },
     MiniPickBorderBusy    = { fg = c.warn, bg = c.bg1 },
-    MiniPickBorderText    = { fg = c.bright_aqua, bg = c.bg1 },
+    MiniPickBorderText    = { fg = c.bright_magenta, bg = c.bg1 },
     MiniPickCursor        = { bg = c.bg2 },
     MiniPickIconDirectory = { fg = c.bright_blue },
     MiniPickIconFile      = { fg = c.fg0 },
     MiniPickHeader        = { fg = c.bright_magenta },
     MiniPickMatchCurrent  = { bg = c.bg2 },
     MiniPickMatchMarked   = { bg = c.bg2, bold = true },
-    MiniPickMatchRanges   = { fg = c.bright_yellow, bold = true },
+    MiniPickMatchRanges   = { fg = c.bright_magenta, bold = true },
     MiniPickNormal        = { fg = c.fg0, bg = c.bg1 },
     MiniPickPreviewLine   = { bg = c.bg2 },
     MiniPickPreviewRegion = { bg = c.bg2 },
-    MiniPickPrompt        = { fg = c.bg0, bg = c.bright_aqua },
+    MiniPickPrompt        = { fg = c.bg0, bg = c.bright_magenta },
 
     MiniHipatternsFixme = { fg = c.bg0, bg = c.error, bold = true },
     MiniHipatternsHack  = { fg = c.bg0, bg = c.warn, bold = true },
@@ -445,12 +445,12 @@ M.setup = function()
     MiniIconsAzure  = { fg = c.bright_blue },
     MiniIconsBlue   = { fg = c.bright_blue },
     MiniIconsCyan   = { fg = c.bright_aqua },
-    MiniIconsGreen  = { fg = c.bright_green },
+    MiniIconsGreen  = { fg = c.green },
     MiniIconsGrey   = { fg = c.fg_dim },
     MiniIconsOrange = { fg = c.bright_orange },
     MiniIconsPurple = { fg = c.bright_magenta },
-    MiniIconsRed    = { fg = c.bright_red },
-    MiniIconsYellow = { fg = c.bright_yellow },
+    MiniIconsRed    = { fg = c.red },
+    MiniIconsYellow = { fg = c.yellow },
 
     ------------------------------------------------------------------
     -- snacks.nvim
@@ -482,43 +482,43 @@ M.setup = function()
     SnacksNotifierFooterTrace = { fg = c.bright_magenta },
 
     SnacksDashboardHeader   = { fg = c.bright_magenta, bold = true },
-    SnacksDashboardIcon     = { fg = c.bright_aqua },
+    SnacksDashboardIcon     = { fg = c.bright_magenta },
     SnacksDashboardDesc     = { fg = c.fg0 },
     SnacksDashboardFile     = { fg = c.bright_blue },
     SnacksDashboardDir      = { fg = c.fg_dim },
     SnacksDashboardFooter   = { fg = c.comment, italic = true },
-    SnacksDashboardKey      = { fg = c.bright_orange, bold = true },
-    SnacksDashboardTitle    = { fg = c.bright_aqua, bold = true },
+    SnacksDashboardKey      = { fg = c.bright_magenta, bold = true },
+    SnacksDashboardTitle    = { fg = c.bright_magenta, bold = true },
     SnacksDashboardTerminal = { fg = c.fg0, bg = c.bg1 },
 
     SnacksPicker          = { fg = c.fg0, bg = c.bg1 },
     SnacksPickerBorder    = { fg = c.border, bg = c.bg1 },
-    SnacksPickerTitle     = { fg = c.bright_aqua, bold = true },
+    SnacksPickerTitle     = { fg = c.bright_magenta, bold = true },
     SnacksPickerFooter    = { fg = c.fg_dim },
     SnacksPickerInput     = { fg = c.fg0, bg = c.bg1 },
     SnacksPickerInputBorder = { fg = c.border, bg = c.bg1 },
     SnacksPickerInputTitle  = { fg = c.bright_magenta, bold = true },
     SnacksPickerList      = { fg = c.fg0, bg = c.bg1 },
     SnacksPickerListBorder = { fg = c.border, bg = c.bg1 },
-    SnacksPickerListTitle  = { fg = c.bright_aqua, bold = true },
+    SnacksPickerListTitle  = { fg = c.bright_magenta, bold = true },
     SnacksPickerCursorLine = { bg = c.bg2 },
-    SnacksPickerMatch     = { fg = c.bright_aqua, bold = true },
+    SnacksPickerMatch     = { fg = c.bright_magenta, bold = true },
     SnacksPickerDir       = { fg = c.fg_dim },
     SnacksPickerFile      = { fg = c.bright_blue },
-    SnacksPickerIcon      = { fg = c.bright_orange },
-    SnacksPickerSelected  = { fg = c.bright_yellow, bold = true },
+    SnacksPickerIcon      = { fg = c.bright_magenta },
+    SnacksPickerSelected  = { fg = c.bright_magenta, bold = true },
     SnacksPickerTree      = { fg = c.bg2 },
 
     SnacksIndent        = { fg = c.bg2 },
-    SnacksIndentScope   = { fg = c.bright_aqua },
+    SnacksIndentScope   = { fg = c.bright_magenta },
     SnacksIndentChunk   = { fg = c.bg2 },
 
-    SnacksZenIcon       = { fg = c.bright_aqua },
+    SnacksZenIcon       = { fg = c.bright_magenta },
     SnacksZenBackdrop   = { bg = c.bg0, blend = 50 },
 
     SnacksScratch       = { link = "NormalFloat" },
     SnacksScratchBorder = { link = "FloatBorder" },
-    SnacksScratchTitle  = { fg = c.bright_aqua, bold = true },
+    SnacksScratchTitle  = { fg = c.bright_magenta, bold = true },
 
     SnacksImage          = { fg = c.bright_magenta },
     SnacksImageBorder    = { fg = c.border, bg = c.bg1 },
@@ -530,7 +530,7 @@ M.setup = function()
 
     SnacksTerminal        = { fg = c.fg0, bg = c.bg1 },
     SnacksTerminalBorder  = { fg = c.border, bg = c.bg1 },
-    SnacksTerminalTitle   = { fg = c.bright_aqua, bold = true },
+    SnacksTerminalTitle   = { fg = c.bright_magenta, bold = true },
     SnacksTerminalWinBar  = { fg = c.fg1, bg = c.bg1, bold = true },
     SnacksTerminalWinBarNC = { fg = c.fg_dim, bg = c.bg1 },
 
@@ -548,8 +548,8 @@ M.setup = function()
     ------------------------------------------------------------------
     UndotreeSavedBig  = { fg = c.bg0, bg = c.bright_yellow, bold = true },
     UndotreeNode      = { fg = c.fg0 },
-    UndotreeNodeCurrent = { fg = c.bg0, bg = c.bright_aqua, bold = true },
-    UndotreeCurrent   = { fg = c.bright_aqua, bold = true },
+    UndotreeNodeCurrent = { fg = c.bg0, bg = c.bright_magenta, bold = true },
+    UndotreeCurrent   = { fg = c.bright_magenta, bold = true },
     UndotreeSeq       = { fg = c.fg_dim },
     UndotreeTimeStamp = { fg = c.comment, italic = true },
     UndotreeDiffAdded = { fg = c.diff_add },
@@ -572,15 +572,15 @@ M.setup = function()
     -- colorizer
     ------------------------------------------------------------------
     ColorColumn      = { bg = c.cursorline },
-    colorizerColor   = { fg = c.bright_aqua },
-    colorizerPreview = { fg = c.bright_aqua, italic = true },
+    colorizerColor   = { fg = c.bright_magenta },
+    colorizerPreview = { fg = c.bright_magenta, italic = true },
 
     ------------------------------------------------------------------
     -- calcium
     ------------------------------------------------------------------
     CalciumNormal      = { link = "NormalFloat" },
     CalciumBorder      = { link = "FloatBorder" },
-    CalciumTitle       = { fg = c.bright_aqua, bold = true },
+    CalciumTitle       = { fg = c.bright_magenta, bold = true },
     CalciumSelected    = { fg = c.bright_magenta, bold = true },
     CalciumUnselected  = { fg = c.fg_dim },
     CalciumDim         = { fg = c.comment },
@@ -592,16 +592,16 @@ M.setup = function()
     VimwikiHeader1      = { fg = c.bright_magenta, bold = true },
     VimwikiHeader2      = { fg = c.bright_blue, bold = true },
     VimwikiHeader3      = { fg = c.bright_aqua, bold = true },
-    VimwikiHeader4      = { fg = c.bright_green, bold = true },
-    VimwikiHeader5      = { fg = c.bright_yellow, bold = true },
-    VimwikiHeader6      = { fg = c.bright_orange, bold = true },
+    VimwikiHeader4      = { fg = c.green, bold = true },
+    VimwikiHeader5      = { fg = c.yellow, bold = true },
+    VimwikiHeader6      = { fg = c.red, bold = true },
     VimwikiHeaderChar   = { fg = c.fg_dim },
     VimwikiList         = { fg = c.bright_magenta },
     VimwikiListTodo     = { fg = c.bright_yellow },
     VimwikiCheckBoxDone = { fg = c.bright_green },
     VimwikiCode         = { fg = c.green, bg = c.bg1 },
     VimwikiWeblink1     = { fg = c.bright_blue, underline = true },
-    VimwikiTag          = { fg = c.bright_aqua },
+    VimwikiTag          = { fg = c.bright_magenta },
 
     ------------------------------------------------------------------
     -- git signs
@@ -613,9 +613,6 @@ M.setup = function()
     GitSignsChangeLn = { bg = c.bg1 },
     GitSignsDeleteLn = { bg = c.bg1 },
 
-    ------------------------------------------------------------------
-    -- gitsigns (older names, harmless)
-    ------------------------------------------------------------------
     GitGutterAdd    = { fg = c.diff_add },
     GitGutterChange = { fg = c.diff_change },
     GitGutterDelete = { fg = c.diff_delete },
@@ -627,8 +624,8 @@ M.setup = function()
     CmpDocumentationBorder   = { link = "FloatBorder" },
     CmpItemAbbr              = { fg = c.fg0 },
     CmpItemAbbrDeprecated    = { fg = c.fg_dim, strikethrough = true },
-    CmpItemAbbrMatch         = { fg = c.bright_aqua, bold = true },
-    CmpItemAbbrMatchFuzzy    = { fg = c.bright_aqua, bold = true },
+    CmpItemAbbrMatch         = { fg = c.bright_magenta, bold = true },
+    CmpItemAbbrMatchFuzzy    = { fg = c.bright_magenta, bold = true },
     CmpItemKind              = { fg = c.bright_blue },
     CmpItemMenu              = { fg = c.comment },
 
@@ -637,12 +634,12 @@ M.setup = function()
     ------------------------------------------------------------------
     TelescopeNormal         = { link = "NormalFloat" },
     TelescopeBorder         = { link = "FloatBorder" },
-    TelescopeTitle          = { fg = c.bright_aqua, bold = true },
+    TelescopeTitle          = { fg = c.bright_magenta, bold = true },
     TelescopePromptTitle    = { fg = c.bright_magenta, bold = true },
     TelescopeResultsTitle   = { fg = c.bright_blue, bold = true },
     TelescopeSelection      = { bg = c.bg2 },
-    TelescopeSelectionCaret = { fg = c.bright_aqua, bg = c.bg2 },
-    TelescopeMatching       = { fg = c.bright_aqua, bold = true },
+    TelescopeSelectionCaret = { fg = c.bright_magenta, bg = c.bg2 },
+    TelescopeMatching       = { fg = c.bright_magenta, bold = true },
 
     ------------------------------------------------------------------
     -- misc common
@@ -650,7 +647,7 @@ M.setup = function()
     NeogitBranch        = { fg = c.bright_magenta },
     NeogitRemote        = { fg = c.bright_aqua },
     NeogitHunkHeader    = { fg = c.fg0, bg = c.bg1 },
-    NeogitHunkHeaderHighlight = { fg = c.bright_aqua, bg = c.bg2 },
+    NeogitHunkHeaderHighlight = { fg = c.bright_magenta, bg = c.bg2 },
 
     NotifyERRORBorder = { fg = c.error },
     NotifyWARNBorder  = { fg = c.warn },
@@ -670,9 +667,9 @@ M.setup = function()
 
     IndentBlanklineChar        = { fg = c.bg2 },
     IndentBlanklineSpaceChar   = { fg = c.bg2 },
-    IndentBlanklineContextChar = { fg = c.bright_aqua },
+    IndentBlanklineContextChar = { fg = c.bright_magenta },
     IblIndent                  = { fg = c.bg2 },
-    IblScope                   = { fg = c.bright_aqua },
+    IblScope                   = { fg = c.bright_magenta },
   }
 end
 

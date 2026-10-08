@@ -12,7 +12,7 @@ return {
 
   -- ANSI base
   black   = "#242424",
-  red     = "#ab0020",
+  red     = "#d34c2a",
   green   = "#00711d",
   yellow  = "#fcbf49",
   blue    = "#103f79",
@@ -50,7 +50,7 @@ return {
   whitespace    = "#515155",
 
   -- Diagnostics
-  error = "#dd1923",
+  error = "#d34c2a",
   warn  = "#f2c218",
   info  = "#93e9be",
   hint  = "#75aadb",
@@ -58,10 +58,10 @@ return {
   -- Diff
   diff_add    = "#069b2e",
   diff_change = "#75aadb",
-  diff_delete = "#dd1923",
+  diff_delete = "#d34c2a",
   diff_text   = "#f2c218",
 
-  -- Accents
+  -- Accents (priority order: bright_magenta > green > bright_blue > red > yellow)
   accent      = "#f27dfd",
   search      = "#f2c218",
   inc_search  = "#d86c37",
